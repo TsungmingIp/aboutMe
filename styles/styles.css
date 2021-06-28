@@ -1,0 +1,574 @@
+* {
+    box-sizing: border-box;
+    font-family: "calibri", 'Lato', sans-serif, 'Roboto', sans-serif;
+    z-index: 1;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navBar {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    z-index: 99;
+    min-width: 739px;
+
+}
+
+body {
+    background: #171717;
+    min-width: 800px;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    background-color: #171717;
+    width: 100%;
+    height: 120px;
+    padding: 1.5%;
+    margin: 0%;
+    margin-block-start: 0em;
+    list-style-type: none;
+    margin-block-end: 0em;
+    border-bottom: 4px solid rgb(51, 51, 51);
+}
+
+
+.titleRight {
+    display: inline;
+    width: auto;
+    height: auto;
+    padding: 8px;
+}
+
+.name {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid rgb(51, 51, 51);
+    display: inline;
+    padding: 8px;
+
+}
+
+.thinText {
+    font-weight: 100;
+    position: relative;
+    right: 9px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    float: right;
+    margin: 2px;
+    /* clear: both; */
+
+}
+
+/* Contact me Button */
+.button {
+    border: 4px solid #333;
+    cursor: pointer;
+    /* margin: px; */
+    font-weight: bold;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 13px;
+}
+
+/* .portfolioContainer {
+    margin: 0px;
+    padding:0px;
+    min-width: 250px;
+    display: inline;
+    float: right;
+} */
+
+.personalStatementContainer {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 160px;
+}
+
+.personalStatementContainer::before {
+    background-image: url(/styles/img/Coron.jpg);
+    position: absolute;
+    background-position: center;
+    content: " ";
+    top: 2%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 1;
+    width: 100%;
+    background-size: cover;
+    border-top: 4px solid #333;
+    /* border-bottom: 2px solid #333;     */
+}
+
+.overlay {
+    background: #000;
+    position: absolute;
+    background-position: center center;
+    content: " ";
+    top: 2%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.webDev {
+    /* margin: 10px 35%; */
+    padding: 12px;
+    /* border: 4px solid black; */
+    /* background: #333; */
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    min-width: 200px;
+    display: inline;
+}
+
+/* Personal Statement */
+/* h2 {
+    height: 40px;
+    font-size: 70px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 2px rgb(66, 66, 66);
+    clear: both;
+    margin: 1px;
+    padding: 30px;  
+} */
+
+.pspace {
+    /* margin: 0px 15%; */
+    font-size: 40px;
+    font-family: "calibri";
+    position: relative;
+    top: 15vw;
+    text-align: center;
+    padding: 120px 80px 80px 80px;
+    min-width: 91%;
+    color: white;
+    -webkit-text-stroke: 2px rgb(66, 66, 66);
+}
+
+
+
+/* **************Brief History************ */
+.bHContainer {
+    /* background-image: url(/styles/img/robotKiren.jpg); */
+    height: 90vh;
+    border-bottom: 4px solid rgb(51, 51, 51);
+    padding: 0 0 80px;
+    position: relative;
+    z-index: 1;
+    border-top: 6px solid black;
+}
+
+.bHContainer::before {
+    background-image: url(/styles/img/tile.png);
+    position: absolute;
+    background-position: center;
+    content: " ";
+    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background-repeat: no-repeat; */
+    z-index: -1;
+    opacity: 0.1;
+    /* width: 100%; */
+    /* background-size: cover; */
+
+    border-top: 4px solid rgb(51, 51, 51);
+    /* border-bottom: 4px solid rgb(51, 51, 51); */
+}
+
+.overlay_Bh {
+    /* background: #000 ; */
+    position: absolute;
+    background-position: center center;
+    content: " ";
+    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+h3 {
+    font-size: 70px;
+    /* background: rgb(190, 190, 190); */
+    padding: 0px 0px 0px 60px;
+    margin: 2px 0%;
+    text-align: left;
+    z-index: 1;
+    color: white;
+}
+
+.myPic {
+    float: right;
+    height: 300px;
+    width: auto;
+    border: 4px solid rgb(51, 51, 51);
+    padding: 0px;
+    margin: 10px;
+    max-width: 200px;
+    min-width: 250px;
+    border-radius: 20%;
+    position: relative;
+    bottom: 65px;
+    right: 10px;
+}
+
+
+
+/* .portfolio {
+   border: 4px solid lightgrey;
+   padding: 10px;
+   font-size: 15px;
+   background-color: grey;
+   color: rgb(194, 239, 250);
+   border-radius: 25%;
+} */
+
+.pHistory {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 280px 10px 40px;
+    font-size: 1.3rem;
+    min-width: 400px;
+    color: white;
+    /* position: left; */
+}
+
+/* ********reason********** */
+.reasonContainer {
+    background: linear-gradient(180deg,
+            rgb(5, 5, 5) 0%,
+            rgb(209, 232, 238) 45%,
+            rgb(10, 10, 10));
+
+
+    padding: 0 0 80px;
+    height: 70vh;
+    border-top: 4px solid rgb(0, 0, 0);
+}
+
+.pReason {
+    padding: 15px;
+    margin: 0% 15% 2% 15%;
+    font-size: 1.2rem;
+    color: white;
+    min-width: 400px;
+    /* -webkit-text-stroke: 1px rgb(66, 66, 66); */
+}
+
+h4 {
+    text-align: center;
+    margin: 40px 5%;
+    font-size: 40px;
+    color: white;
+    font-family: "calibri";
+    padding: 0px 30px;
+    min-width: 400px;
+    -webkit-text-stroke: 3px rgb(66, 66, 66);
+}
+
+/* ************ Hobby Title *************/
+h5 {
+    font-size: 35px;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    border-top: 4px solid rgb(51, 51, 51);
+    text-align: center;
+    background: #222;
+    min-width: 400px;
+}
+
+.hobbyBackground {
+    background: #222;
+    /* height: 90vh; */
+    width: auto;
+    border-top: 4px solid #333;
+}
+
+.hobbyContainer {
+    height: auto;
+    width: auto;
+    text-align: center;
+    background: #222;
+    min-width: 400px;
+}
+
+.hobbyP {
+    color: white;
+    font-size: 25px;
+}
+
+.hobbies {
+    /* float: left; */
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    /* height: 270px; */
+    /* width: 250px; */
+    border: 4px solid white;
+    border-radius: 15%;
+    /* min-width: 40px; */
+}
+
+h6 {
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    /* font-style: normal; */
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    /* float: left; */
+    margin: 5px;
+    padding: 5px;
+    border: 4px solid darkgrey;
+    display: inline-block;
+    border-radius: 15%;
+    min-width: 20%;
+}
+
+.moreImages {
+    display: none;
+}
+
+.showMoreContainer {
+    margin: auto;
+}
+
+.showMoreButton {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 15px;
+    padding: 10px;
+    border: 4px solid #333;
+    border-radius: 5%;
+    cursor: pointer;
+    background-color: #222;
+    font-size: 20px;
+    color: white;
+}
+
+.hobbyContainer.showMoreImages .moreImages {
+    display: inline;
+}
+
+
+/* **************footer********** */
+
+.backToTopContainer {
+    display: block;
+    background-color: #222;
+    border-top: 4px solid rgb(51, 51, 51);
+    text-align: center;
+    margin: 10px 0px;
+    padding: 30px 0px 40px 0px;
+    /* margin: 20px 0px 0px 0px; */
+}
+
+.backToTop {
+    border: 4px solid rgb(194, 239, 250);
+    padding: 5px;
+    font-size: 15px;
+    position: relative;
+    background-color: lightslategray;
+    color: rgb(194, 239, 250);
+    border-radius: 5%;
+}
+
+
+.copyrightContainer {
+    /* display: line; */
+    text-align: left;
+    background-color: rgb(51, 51, 51);
+    border-top: 4px solid #222;
+    position: relative;
+    /* position: fixed; */
+    z-index: 1;
+
+
+}
+
+.copyright {
+    color: white;
+    margin: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+.contactHeading {
+
+    background-color: #171717;
+    width: 100%;
+    height: 120px;
+    padding: 1.5%;
+    margin: 0%;
+    margin-block-start: 0em;
+    list-style-type: none;
+    margin-block-end: 0em;
+    border-bottom: 4px solid rgb(51, 51, 51);
+
+}
+
+
+/* ***********ContactMePage StyleSheet********* */
+.ContactMeHeading {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid rgb(51, 51, 51);
+    display: inline;
+    padding: 8px;
+}
+
+.contactHeading {
+
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 12px;
+
+}
+
+.thinTextContact {
+    font-weight: 100;
+    position: relative;
+    right: 2px;
+}
+
+.contactImageBackground {
+    position: relative;
+    margin: 0px 0 60px 0;
+    padding: 0%;
+    height: 53vh;
+    width: 100%;
+    /* border: 4px solid #222; */
+    /* border-top: 4px solid black;   */
+}
+
+.contactImageBackground::before {
+    background-image: url(/styles/img/Coron2.jpg);
+    position: absolute;
+    background-position: center;
+    content: " ";
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    height: 53vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 1;
+    width: 100%;
+    background-size: cover;
+    padding: 10px 0px;
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
+
+    /* border-bottom: 2px solid #333;     */
+}
+
+.formContainer {
+
+    position: relative;
+
+}
+
+.form {
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    background-color: #222;
+}
+
+.submitMessage {
+    min-height: 50px;
+    min-width: 40px;
+}
+
+.emailWidth {
+    width: 20px;
+    text-decoration: none;
+}
+
+.submit {
+
+    position: relative;
+    left: 20px;
+    height: 30px;
+    width: 60px;
+    bottom: 10px;
+}
+
+.emailMeContainer {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.linkedin {
+    color: white;
+    margin: auto;
+    padding: 5px;
+    display: inline-block;
+}
+
+.Contactbutton {
+    border: 4px solid #333;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 13px;
+}
+
+/* Contact me Button */
+/* .button {
+    border: 4px solid rgb(194, 239, 250);
+    border-radius: 25%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: lightslategray;
+    display: inline-block;
+    color: rgb(194, 239, 250);
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+} */
+/* .end {
+    background-color: blueviolet;
+} */
